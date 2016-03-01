@@ -171,26 +171,14 @@ nav a:hover {
 .hero img {
     margin-top: 80px;
     width: 400px;
-
-    /*text-align: center;*/
-    /*clear:left;*/
-    /*float:left;*/
-    /*list-style:none;*/
-    /*margin: 0 auto;*/
-    /*padding:0;*/
-    /*position:relative;*/
-    /*left:50%;*/
-    /*text-align:center;*/
 }
 
 .main aside {
-    /*background: #f16529;*/
     color: #e44d26;
 }
 
 .main aside {
-    /*border-top: 10px solid #e44d26;*/
-    /*padding-top: 10px;*/
+    
 }
 
 .main aside h2 img {
@@ -241,6 +229,10 @@ nav a:hover {
     height: 50%;
 }
 
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
 
 
 
@@ -343,6 +335,11 @@ nav a:hover {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+ .parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
 
 .hidden {
     display: none !important;
