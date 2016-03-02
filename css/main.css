@@ -108,17 +108,17 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
+    color: rgba(255, 255, 255, 0.85);
     background: #e44d26;
+    transition: color 0.2s ease-in-out;
 }
 
-nav a:hover,
 nav a:visited {
-    color: white;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: white;
 }
 
 /* ==============
