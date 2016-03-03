@@ -108,17 +108,22 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
+    color: rgba(255, 255, 255, 0.85);
     background: #e44d26;
+    transition: color 0.2s ease-in-out;
 }
 
-nav a:hover,
 nav a:visited {
-    color: white;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 nav a:hover {
-    text-decoration: underline;
+<<<<<<< HEAD
+  background-color: red;
+  text-decoration: none;
+=======
+    color: white;
+>>>>>>> origin/master
 }
 
 /* ==============
@@ -178,10 +183,11 @@ nav a:hover {
 }
 
 .main aside {
-    
+    /*border-top: 10px solid #e44d26;*/
+    /*padding-top: 10px;*/
 }
 
-.main aside h2 img {
+.main aside img {
   margin-top: -20px;
   margin-left: 15px;
   width: 200px;
@@ -228,15 +234,6 @@ nav a:hover {
     padding-right: 25px;
     height: 50%;
 }
-
-.parallax-window {
-    min-height: 600px;
-    background: transparent;
-}
-
-
-
-
 
 
 
