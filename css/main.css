@@ -1,4 +1,5 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+@import url(https://fonts.googleapis.com/css?family=Patua+One|Lato);
 
 html {
     color: #222;
@@ -57,8 +58,10 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-    background-color: #F4F1BB;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(#FFFDC0, #FABE28);
+    color: #142F30;
+
 }
 
 .wrapper {
@@ -72,6 +75,10 @@ body {
 
 .header-container {
     border-bottom: 20px solid #e44d26;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(241,101,41, .95);
+    margin-top: -80px;
 }
 
 .footer-container {
@@ -79,7 +86,7 @@ body {
 }
 
 
-.header-container,
+
 .footer-container{
     background: #f16529;
 }
@@ -97,6 +104,9 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    font-family: 'Patua One', cursive;
+
+
 }
 
 nav a {
@@ -106,11 +116,13 @@ nav a {
 
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+
 
     color: rgba(255, 255, 255, 0.85);
     background: #e44d26;
     transition: color 0.2s ease-in-out;
+
+
 }
 
 nav a:visited {
@@ -119,6 +131,9 @@ nav a:visited {
 
 nav a:hover {
     color: white;
+    transform: scale(1.05);
+    transition:  ease-out 250ms;
+
 }
 
 /* ==============
@@ -131,6 +146,7 @@ nav a:hover {
 
 .main article h1 {
     font-size: 2em;
+    font-family: 'Patua One', sans-serif;
 }
 
 /*.main aside {
@@ -141,7 +157,10 @@ nav a:hover {
 .footer-container footer {
     color: white;
     padding: 20px 0;
+
 }
+
+
 
 /* ===============
     ALL: IE Fixes
@@ -166,6 +185,7 @@ nav a:hover {
     height: 500px;
     background-position: left 20%;
     text-align: center;
+    margin-top: 80px;
 }
 
 .hero img {
@@ -202,6 +222,9 @@ nav a:hover {
   text-transform: uppercase;
   font-size: .95em;
   font-weight: bold;
+  font-family: 'Patua One', sans-serif;
+  /*text-shadow: 1px 1px 10px white: ;*/
+
 }
 
 .main aside p {
@@ -230,7 +253,14 @@ nav a:hover {
     height: 50%;
 }
 
+.footer-container li img a:hover {
+  transform: scale(1.05);
+}
 
+
+/*.main-container {
+  margin-top: 100px;
+}*/
 
 /* ==========================================================================
    Media Queries
@@ -293,6 +323,7 @@ nav a:hover {
     }
 
     nav {
+        /*position:fixed;*/
         float: right;
         width: 38%;
     }

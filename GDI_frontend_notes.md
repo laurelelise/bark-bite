@@ -1,6 +1,6 @@
 #GDI HTML2 CSS2 workshop
 
-Notes from Girl Develop It course on Feb 27th, 2016. Plus added notes from research and building a website for a friend. 
+Notes from Girl Develop It course on Feb 27th, 2016. Plus added notes from research and building a website for a friend.
 
 ##Standard Practices
 
@@ -55,3 +55,63 @@ Allows users to have access to navigational elements all the time because the ba
 
 ## Hero images
 Large banner image that used as an "above the fold" attention grabber for your users. The first visual that a visitor encounters when they visit the website is the hero image. It's often image and text and it can be static or dynamic.
+
+#GDI HTML/CSS 201 Notes Week 2
+
+##SVG Graphics
+Faster to download and crisper graphic. It is a text editable file with coordinates that can be edited in illustrator. You can use the img src tag to include the location of the file. You can also fall back on a high resolution .png. You will want to specify a width and height or a percentage. You will also have to specify the background size. You can also add the src into the CSS.
+
+##Social links
+These should always be in an unordered list so that they can be styled in-line. Similar to the NAV <ul> Go to this article to find more about centering menus: http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support
+Also this reference is great for CSS: https://css-tricks.com/
+
+##@font-face
+You can specify a specific type-face for the website. Use the tag @font-face : https://www.google.com/fonts
+Add the link to the top of global CSS as @import
+- When you specify the font within your CSS styles, use font-family:'font name', alternative style like sans-serif
+- If you want to download the free google fonts: https://github.com/google/fonts/archive/master.zip
+http://www.fontsquirrel.com/
+http://typecast.com/
+
+##Opacity
+In CSS3 they've added an 'a' in rgba which stands for 'alpha' where a value of 1 is completely opaque and a value of 0 is completely transparent. Like so: #0000FF or rgb(0, 0, 255) The opacity goes all the way down to .1 which is the least opaque.
+
+##Gradients
+Great tool for creating a gradient: http://www.colorzilla.com/gradient-editor/
+.linear-example4 {
+background-image: linear-gradient(red, white);
+}
+.linear-example5 {
+background-image: linear-gradient(right, red, white);
+}
+.linear-example6 {
+background-image: linear-gradient(bottom right, red, white);
+}
+
+##Transition
+You will need a trigger:
+- Hover  
+- Mouse click  
+- Focus state  
+- Active state  
+- Changes to the element  
+
+Transition properties:
+- transition-property  
+- transition-duration  
+- transition-delay  
+- transition-timing-function  
+
+Great example of animation: http://leaverou.github.io/animatable/
+And ALL these things can be animated: https://www.w3.org/TR/css3-transitions/#animatable-css
+Transition timing and easing: http://gdila.github.io/gdi-featured-intermediate-html-css/#/142
+Great resource for special CSS effects: http://suzettepress.com/
+
+##Responsive Web design
+http://gdila.github.io/gdi-featured-intermediate-html-css/#/151
+
+http://mediaqueri.es/
+
+##wordpress
+SASSY:
+http://wordpress.tv/2014/05/09/suzette-franck-lets-get-sassy/
